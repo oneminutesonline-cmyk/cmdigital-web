@@ -1,0 +1,470 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>CM Digital – Trasformazione digitale, IA, automazione e SEO</title>
+<meta name="description" content="CM Digital S.R.L.S.: IA applicata, automazione dei processi, lead generation, SEO tecnica e siti web per aziende strutturate in Italia e Spagna. Dal 2022.">
+<link rel="canonical" href="https://cmdigital.space/">
+<meta property="og:title" content="CM Digital – Architettura digitale per aziende che scalano">
+<meta property="og:description" content="IA applicata, automazione dei processi, lead generation e SEO tecnica per aziende dai 10 dipendenti in su. Italia e Spagna.">
+<meta property="og:url" content="https://cmdigital.space/">
+<meta property="og:type" content="website">
+<meta name="theme-color" content="#0A0C0F">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%230A0C0F'/%3E%3Crect x='9' y='9' width='14' height='14' fill='none' stroke='%23C6FF3D' stroke-width='3' transform='rotate(45 16 16)'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@400;600;800&family=IBM+Plex+Sans:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Organization","name":"CM Digital S.R.L.S.","url":"https://cmdigital.space/","email":"cmdigotal.1900@gmail.com","telephone":["+393480483438","+393505319152"],"vatID":"IT03187650605","foundingDate":"2022","address":{"@type":"PostalAddress","streetAddress":"Via Campo La Guzza 7/A","postalCode":"03030","addressLocality":"Broccostella","addressRegion":"FR","addressCountry":"IT"},"areaServed":["IT","ES"]}
+</script>
+<style>
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:#0A0C0F;font-family:'IBM Plex Sans',system-ui,sans-serif;color:#EDEFF2;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+a{color:#C6FF3D}a:hover{color:#E4FF9E}
+h1,h2,h3,p{margin:0}
+.mono{font-family:'JetBrains Mono',monospace}
+.disp{font-family:Unbounded,sans-serif}
+.acc{color:#C6FF3D}
+.muted{color:#9AA3AD}
+.px{padding-left:80px;padding-right:80px}
+.wrap{max-width:1440px;margin:0 auto}
+.btn{display:inline-flex;align-items:center;justify-content:center;background:#C6FF3D;color:#0A0C0F;font-weight:600;text-decoration:none;border-radius:6px;border:0;font-family:inherit;cursor:pointer}
+.btn:hover{background:#D8FF7A;color:#0A0C0F}
+.btn-ghost{display:inline-flex;align-items:center;border:1px solid #2E3740;color:#EDEFF2;text-decoration:none;border-radius:6px}
+.btn-ghost:hover{border-color:#C6FF3D;color:#EDEFF2}
+.tag{font-family:'JetBrains Mono',monospace;font-size:13px;color:#C6FF3D}
+.h2{font-family:Unbounded,sans-serif;font-weight:600;font-size:48px;line-height:1.1;letter-spacing:-1.2px}
+.grid2{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:80px}
+.grid3{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px}
+.grid4{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:20px}
+.col{display:flex;flex-direction:column}
+
+/* top bar + header */
+.topbar{min-height:44px;display:flex;align-items:center;justify-content:space-between;gap:20px;background:#0E1115;border-bottom:1px solid #1C2229;font-size:13px;color:#9AA3AD}
+.topbar .links{display:flex;gap:28px}
+.topbar a{color:#B7BEC6;text-decoration:none}
+header.site{position:sticky;top:0;z-index:20;background:rgba(10,12,15,.88);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);border-bottom:1px solid #1C2229}
+header.site .in{height:88px;display:flex;align-items:center;justify-content:space-between;gap:24px}
+.logo{display:flex;align-items:center;gap:12px;text-decoration:none;color:#EDEFF2}
+.logo i{width:28px;height:28px;border:2px solid #C6FF3D;transform:rotate(45deg);display:block}
+.logo b{font-family:Unbounded,sans-serif;font-weight:800;font-size:20px;letter-spacing:-.5px}
+nav.main{display:flex;gap:40px;font-family:'JetBrains Mono',monospace;font-size:13px}
+nav.main a{color:#B7BEC6;text-decoration:none}nav.main a:hover{color:#C6FF3D}
+header .cta{height:44px;padding:0 22px;font-size:14px;white-space:nowrap}
+.logo{white-space:nowrap}
+
+/* hero */
+.hero{min-height:820px;display:flex;align-items:center;gap:40px;position:relative}
+.hero .txt{width:700px;flex-shrink:0;display:flex;flex-direction:column;gap:32px;position:relative;z-index:2}
+.hero h1{font-family:Unbounded,sans-serif;font-weight:800;font-size:76px;line-height:1.02;letter-spacing:-2.5px}
+.hero p{font-size:21px;line-height:1.55;color:#B7BEC6;max-width:600px}
+.hero .ctas{display:flex;gap:16px;flex-wrap:wrap}
+.hero .ctas .btn{height:56px;padding:0 30px;font-size:16px}
+.hero .ctas .btn-ghost{height:56px;padding:0 26px;font-size:16px}
+.scene{flex-grow:1;height:720px;position:relative;perspective:1100px;overflow:hidden}
+.stage{position:absolute;left:50%;top:46%;width:0;height:0;transform-style:preserve-3d;animation:cmspin 22s linear infinite}
+.core{position:absolute;left:0;top:0;width:0;height:0;transform-style:preserve-3d;animation:cmspinrev 11s linear infinite}
+@keyframes cmspin{from{transform:rotateX(-24deg) rotateY(0deg)}to{transform:rotateX(-24deg) rotateY(360deg)}}
+@keyframes cmspinrev{from{transform:rotateX(35deg) rotateY(360deg)}to{transform:rotateX(35deg) rotateY(0deg)}}
+@keyframes cmfloat{0%,100%{transform:translateY(0)}50%{transform:translateY(-14px)}}
+@keyframes cmpulse{0%,100%{opacity:.35}50%{opacity:1}}
+.face{position:absolute;width:220px;height:220px;left:-110px;top:-110px;border:1.5px solid #C6FF3D;background:rgba(198,255,61,.035)}
+.f1{transform:translateZ(110px)}.f2{transform:rotateY(180deg) translateZ(110px)}.f3{transform:rotateY(90deg) translateZ(110px)}.f4{transform:rotateY(-90deg) translateZ(110px)}.f5{transform:rotateX(90deg) translateZ(110px)}.f6{transform:rotateX(-90deg) translateZ(110px)}
+.cf{position:absolute;width:80px;height:80px;left:-40px;top:-40px;background:rgba(198,255,61,.22);border:1px solid #C6FF3D}
+.c1{transform:translateZ(40px)}.c2{transform:rotateY(180deg) translateZ(40px)}.c3{transform:rotateY(90deg) translateZ(40px)}.c4{transform:rotateY(-90deg) translateZ(40px)}.c5{transform:rotateX(90deg) translateZ(40px)}.c6{transform:rotateX(-90deg) translateZ(40px)}
+.ring{position:absolute;border-radius:50%;border:1px solid rgba(237,239,242,.28)}
+.r1{width:460px;height:460px;left:-230px;top:-230px;transform:rotateX(78deg)}
+.r2{width:380px;height:380px;left:-190px;top:-190px;transform:rotateY(72deg) rotateX(18deg);border-color:rgba(198,255,61,.5);border-style:dashed}
+.r3{width:540px;height:540px;left:-270px;top:-270px;transform:rotateX(62deg) rotateY(28deg)}
+.node{position:absolute;width:10px;height:10px;margin:-5px;border-radius:50%;background:#C6FF3D;animation:cmpulse 2.4s ease-in-out infinite}
+.n1{transform:translate3d(230px,0,0)}.n2{transform:translate3d(-160px,-120px,140px)}.n3{transform:translate3d(0,190px,-120px)}.n4{transform:translate3d(120px,-170px,-160px)}
+.floor{position:absolute;left:-20%;right:-20%;bottom:-120px;height:420px;transform:rotateX(76deg);background-image:linear-gradient(rgba(198,255,61,.16) 1px,transparent 1px),linear-gradient(90deg,rgba(198,255,61,.16) 1px,transparent 1px);background-size:48px 48px}
+.float{position:absolute;inset:0;animation:cmfloat 6s ease-in-out infinite}
+.code{position:absolute;right:10px;top:90px;font-family:'JetBrains Mono',monospace;font-size:12px;color:#8A939D;line-height:1.8;text-align:right}
+
+/* strips */
+.stack{min-height:64px;border-top:1px solid #1C2229;border-bottom:1px solid #1C2229;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:10px 16px;font-family:'JetBrains Mono',monospace;font-size:13px;color:#8A939D;padding-top:14px;padding-bottom:14px}
+.facts{padding-top:56px;padding-bottom:56px;border-bottom:1px solid #1C2229}
+.facts .v{font-family:Unbounded,sans-serif;font-weight:600;font-size:26px}
+.facts .v.m{font-family:'JetBrains Mono',monospace;font-weight:500;font-size:22px;padding-top:4px}
+.facts .d{font-size:15px;color:#9AA3AD;margin-top:8px}
+
+section{scroll-margin-top:96px}
+.sec{padding-top:140px;padding-bottom:140px}
+.about .body{gap:24px;font-size:19px;line-height:1.65;color:#B7BEC6;padding-top:44px}
+
+.svc-head{display:flex;justify-content:space-between;align-items:flex-end;gap:40px}
+.svc-head p{width:440px;font-size:17px;line-height:1.6;color:#9AA3AD}
+.card{padding:36px;background:#11151A;border:1px solid #1F262E;border-radius:12px;display:flex;flex-direction:column;gap:18px;min-height:340px;transition:border-color .2s,transform .2s}
+.card:hover{border-color:#3A4A2A;transform:translateY(-3px)}
+.card .k{font-family:'JetBrains Mono',monospace;font-size:12px;color:#C6FF3D}
+.card h3{font-family:Unbounded,sans-serif;font-weight:600;font-size:22px;line-height:1.25}
+.card p{font-size:16px;line-height:1.6;color:#9AA3AD}
+.card .t{margin-top:auto;font-family:'JetBrains Mono',monospace;font-size:12px;color:#6F7882}
+
+.dove{background:#0E1115;border-top:1px solid #1C2229;border-bottom:1px solid #1C2229;padding-top:120px;padding-bottom:120px;align-items:center}
+.pills{display:flex;gap:12px;flex-wrap:wrap;font-family:'JetBrains Mono',monospace;font-size:13px}
+.pills span{padding:10px 16px;border:1px solid #2E3740;border-radius:999px}
+svg.fluid{width:100%;height:auto;max-width:600px}
+
+.steps{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));border-top:1px solid #2E3740}
+.steps>div{padding:36px 32px 0 0;display:flex;flex-direction:column;gap:16px}
+.steps .n{font-family:Unbounded,sans-serif;font-weight:800;font-size:56px;color:#C6FF3D}
+.steps h3{font-size:22px;font-weight:600}
+.steps p{font-size:16px;line-height:1.6;color:#9AA3AD}
+
+.green{margin:0 80px 140px;padding:80px;background:#0F1410;border:1px solid #243021;border-radius:16px;display:flex;flex-direction:column;gap:56px}
+.green .gcard{padding:32px;background:#0A0C0F;border:1px solid #243021;border-radius:12px;display:flex;flex-direction:column;gap:14px}
+.green .gcard h3{font-family:Unbounded,sans-serif;font-weight:600;font-size:21px}
+.green .gcard p{font-size:16px;line-height:1.6;color:#9AA3AD}
+.green .claim{font-family:Unbounded,sans-serif;font-weight:600;font-size:24px;line-height:1.35;text-align:center}
+
+.gar{padding:28px;border:1px solid #1F262E;border-radius:12px;display:flex;flex-direction:column;gap:12px}
+.gar h3{font-size:19px;font-weight:600}.gar p{font-size:15px;line-height:1.6;color:#9AA3AD}
+
+.contatti{background:#0E1115;border-top:1px solid #1C2229;padding-top:120px;padding-bottom:120px}
+.clist{display:flex;flex-direction:column;gap:14px;font-family:'JetBrains Mono',monospace;font-size:15px;margin-top:12px}
+.clist a{color:#EDEFF2;text-decoration:none;word-break:break-all}.clist a:hover{color:#C6FF3D}
+form{display:flex;flex-direction:column;gap:18px}
+.frow{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}
+label{display:flex;flex-direction:column;gap:8px;font-size:14px;color:#B7BEC6}
+input,select,textarea{height:52px;padding:0 16px;background:#0A0C0F;border:1px solid #2E3740;border-radius:6px;color:#EDEFF2;font-size:16px;font-family:inherit;width:100%}
+textarea{height:auto;padding:14px 16px;resize:vertical}
+input:focus,select:focus,textarea:focus{outline:none;border-color:#C6FF3D}
+form .btn{height:56px;font-size:16px}
+.fnote{font-size:13px;line-height:1.5;color:#8A939D}
+.fmsg{font-size:14px;color:#C6FF3D;min-height:1em}
+
+footer{padding-top:64px;padding-bottom:40px;border-top:1px solid #1C2229;font-size:14px;color:#9AA3AD}
+footer .grid4{gap:40px}
+footer .col{gap:8px;line-height:1.5}
+footer .col b{color:#EDEFF2;font-weight:600}
+footer a{color:#9AA3AD;text-decoration:none}footer a:hover{color:#C6FF3D}
+footer .copy{margin-top:40px;padding-top:24px;border-top:1px solid #1C2229;font-size:13px;font-family:'JetBrains Mono',monospace}
+.legal{max-width:900px;font-size:14px;line-height:1.7;color:#9AA3AD}
+.legal h3{color:#EDEFF2;font-size:16px;margin:24px 0 8px}
+
+.reveal{opacity:0;transform:translateY(24px);transition:opacity .7s ease,transform .7s ease}
+.reveal.in{opacity:1;transform:none}
+@media (prefers-reduced-motion:reduce){.stage,.core,.float,.node{animation:none}.reveal{opacity:1;transform:none;transition:none}html{scroll-behavior:auto}}
+
+/* tablet */
+@media (max-width:1180px){
+ .px{padding-left:40px;padding-right:40px}
+ nav.main{gap:24px}
+ .hero{flex-direction:column;align-items:flex-start;min-height:0;padding-top:80px}
+ .hero .txt{width:100%}
+ .hero h1{font-size:60px}
+ .scene{width:100%;height:520px;flex-grow:0}
+ .grid2{gap:48px}
+ .grid3{grid-template-columns:repeat(2,minmax(0,1fr))}
+ .grid4,.steps{grid-template-columns:repeat(2,minmax(0,1fr))}
+ .steps>div{padding-bottom:32px}
+ .green{margin:0 40px 100px;padding:56px 40px}
+ .sec{padding-top:100px;padding-bottom:100px}
+}
+@media (max-width:900px){
+ nav.main{display:none}
+ .topbar .claim{display:none}
+ .topbar{justify-content:center}
+ .grid2{grid-template-columns:1fr}
+ .about .body{padding-top:0}
+ .svc-head{flex-direction:column;align-items:flex-start}
+ .svc-head p{width:auto}
+ .h2{font-size:38px}
+}
+/* mobile */
+@media (max-width:640px){
+ .px{padding-left:20px;padding-right:20px}
+ .topbar{display:none}
+ header.site .in{height:68px}
+ .logo b{font-size:17px}.logo i{width:22px;height:22px}
+ header .cta{height:40px;padding:0 14px;font-size:13px}
+ .hero{padding-top:48px;gap:0}
+ .hero .txt{gap:24px}
+ .hero h1{font-size:38px;letter-spacing:-1.2px}
+ .hero p{font-size:17px}
+ .hero .ctas{flex-direction:column;width:100%}
+ .hero .ctas a{width:100%;justify-content:center}
+ .scene{height:380px;margin-top:8px}
+ .stage{transform:scale(.62)}
+ .stage{animation-name:cmspinS}
+ .code{display:none}
+ .stack{justify-content:flex-start;font-size:12px}
+ .stack .dot{display:none}
+ .grid3,.grid4,.steps{grid-template-columns:1fr}
+ .facts .grid4{grid-template-columns:repeat(2,minmax(0,1fr));gap:28px 16px}
+ .facts .v{font-size:20px}.facts .v.m{font-size:16px}
+ .sec{padding-top:72px;padding-bottom:72px}
+ .h2{font-size:30px;letter-spacing:-.6px}
+ .about .body{font-size:17px}
+ .card{min-height:0;padding:28px}
+ .dove,.contatti{padding-top:72px;padding-bottom:72px}
+ .steps .n{font-size:44px}
+ .steps>div{padding-right:0}
+ .green{margin:0 20px 72px;padding:32px 20px;gap:36px}
+ .green .claim{font-size:19px}
+ .frow{grid-template-columns:1fr}
+ footer .grid4{grid-template-columns:1fr;gap:28px}
+}
+@keyframes cmspinS{from{transform:scale(.62) rotateX(-24deg) rotateY(0deg)}to{transform:scale(.62) rotateX(-24deg) rotateY(360deg)}}
+</style>
+</head>
+<body>
+
+<div class="topbar px">
+<span class="claim">CM Digital S.R.L.S. · Operativi in Italia e Spagna · Reinvestiamo nelle energie rinnovabili</span>
+<div class="links mono">
+<a href="tel:+393480483438">+39 348 048 3438</a>
+<a href="tel:+393505319152">+39 350 531 9152</a>
+<a href="mailto:cmdigotal.1900@gmail.com">cmdigotal.1900@gmail.com</a>
+</div>
+</div>
+
+<header class="site">
+<div class="in px wrap">
+<a href="#top" class="logo" aria-label="CM Digital, torna all'inizio"><i></i><b>CM DIGITAL</b></a>
+<nav class="main" aria-label="Menu principale">
+<a href="#servizi">/servizi</a>
+<a href="#metodo">/metodo</a>
+<a href="#dove">/dove</a>
+<a href="#green">/green</a>
+<a href="#contatti">/contatti</a>
+</nav>
+<a href="#contatti" class="btn cta">Richiedi una consulenza</a>
+</div>
+</header>
+
+<main id="top">
+<div class="wrap">
+<section class="hero px">
+<div class="txt">
+<div class="tag">// dal 2022 · digital_transformation · IT + ES</div>
+<h1>Architettura digitale per aziende che scalano.</h1>
+<p>IA applicata, automazione dei processi, lead generation e SEO tecnica per aziende strutturate, dai 10 dipendenti in su. Progettiamo sistemi integrati, non presentazioni.</p>
+<div class="ctas">
+<a href="#contatti" class="btn">Richiedi una consulenza</a>
+<a href="#servizi" class="btn-ghost">Esplora lo stack →</a>
+</div>
+</div>
+<div class="scene" aria-hidden="true">
+<div class="floor"></div>
+<div class="float">
+<div class="stage">
+<div class="ring r1"></div><div class="ring r2"></div><div class="ring r3"></div>
+<div class="face f1"></div><div class="face f2"></div><div class="face f3"></div><div class="face f4"></div><div class="face f5"></div><div class="face f6"></div>
+<div class="core"><div class="cf c1"></div><div class="cf c2"></div><div class="cf c3"></div><div class="cf c4"></div><div class="cf c5"></div><div class="cf c6"></div></div>
+<div class="node n1"></div><div class="node n2"></div><div class="node n3"></div><div class="node n4"></div>
+</div>
+</div>
+<div class="code"><div>agent.run(process)</div><div>webhook → crm.sync()</div><div>seo.audit(core_web_vitals)</div></div>
+</div>
+</section>
+</div>
+
+<div class="stack px">
+<span>LLM</span><span class="dot">·</span><span>AGENTI IA</span><span class="dot">·</span><span>RAG</span><span class="dot">·</span><span>API REST</span><span class="dot">·</span><span>WEBHOOK</span><span class="dot">·</span><span>ETL</span><span class="dot">·</span><span>CRM / ERP</span><span class="dot">·</span><span>CORE WEB VITALS</span><span class="dot">·</span><span>SCHEMA.ORG</span>
+</div>
+
+<div class="facts px">
+<div class="grid4 wrap">
+<div><div class="v">Dal 2022</div><div class="d">Società italiana a responsabilità limitata semplificata</div></div>
+<div><div class="v">IT · ES</div><div class="d">Sede in Italia, progetti a Barcellona, Madrid e Valencia</div></div>
+<div><div class="v">10+ dipendenti</div><div class="d">Il nostro target: aziende strutturate con processi da ottimizzare</div></div>
+<div><div class="v m">03187650605</div><div class="d">Partita IVA verificabile</div></div>
+</div>
+</div>
+
+<div class="wrap">
+<section class="about sec px grid2 reveal">
+<div class="col" style="gap:24px">
+<div class="tag">01 / chi_siamo</div>
+<h2 class="h2">Ingegneria dei processi, prima del codice.</h2>
+</div>
+<div class="col body">
+<p>CM Digital è una società italiana con operatività in Italia e in Spagna. Lavoriamo con team tecnici e direzioni operative per trasformare flussi manuali in sistemi misurabili.</p>
+<p>Partiamo dalla mappatura dei processi AS-IS, definiamo il modello TO-BE e solo dopo scegliamo tecnologie e integrazioni. Il risultato è un'architettura coerente, documentata e manutenibile.</p>
+</div>
+</section>
+
+<section id="servizi" class="px col" style="padding-top:40px;padding-bottom:140px;gap:56px">
+<div class="svc-head reveal">
+<div class="col" style="gap:20px">
+<div class="tag">02 / servizi</div>
+<h2 class="h2">Lo stack CM Digital</h2>
+</div>
+<p>Moduli indipendenti o integrati in un unico progetto, con specifiche tecniche e KPI definiti a monte.</p>
+</div>
+<div class="grid3">
+<div class="card reveal"><div class="k">MOD_01</div><h3>Trasformazione digitale &amp; IA</h3><p>Analisi dei processi, agenti IA basati su LLM, pipeline RAG sulla documentazione aziendale, orchestrazione di task ripetitivi.</p><div class="t">llm · rag · agents</div></div>
+<div class="card reveal"><div class="k">MOD_02</div><h3>Automazione dei processi</h3><p>Workflow event-driven, integrazioni via API e webhook, sincronizzazione dati tra CRM, ERP e gestionali, eliminazione del data-entry manuale.</p><div class="t">api · webhook · etl</div></div>
+<div class="card reveal"><div class="k">MOD_03</div><h3>Lead generation</h3><p>Funnel B2B multicanale, lead scoring, tracciamento conversioni e passaggio automatico dei contatti qualificati al CRM.</p><div class="t">funnel · scoring · crm</div></div>
+<div class="card reveal"><div class="k">MOD_04</div><h3>SEO tecnica &amp; Google</h3><p>Audit di crawling e indicizzazione, Core Web Vitals, dati strutturati Schema.org, architettura informativa e visibilità nelle risposte dei motori IA.</p><div class="t">crawl · cwv · schema · geo</div></div>
+<div class="card reveal"><div class="k">MOD_05</div><h3>Siti web &amp; piattaforme</h3><p>Siti ad alte prestazioni, web app e gestionali su misura: data model, autenticazione, ruoli e API documentate.</p><div class="t">web · app · backend</div></div>
+<div class="card reveal"><div class="k">MOD_06</div><h3>Consulenza &amp; project management</h3><p>Raccolta requisiti, roadmap tecnica, gestione fornitori e avanzamento, KPI di adozione condivisi con il cliente.</p><div class="t">specs · roadmap · kpi</div></div>
+</div>
+</section>
+</div>
+
+<section id="dove" class="dove">
+<div class="px grid2 wrap" style="align-items:center">
+<div class="col reveal" style="gap:24px">
+<div class="tag">03 / dove_operiamo</div>
+<h2 class="h2">Due mercati, un'unica architettura.</h2>
+<p style="font-size:18px;line-height:1.6;color:#B7BEC6">Sede in Italia, progetti attivi in Spagna tra Barcellona, Madrid e Valencia.</p>
+<div class="pills"><span>IT · Italia</span><span>ES · Barcellona</span><span>ES · Madrid</span><span>ES · Valencia</span></div>
+</div>
+<svg class="fluid reveal" viewBox="0 0 600 380" role="img" aria-label="Collegamenti tra Italia e Spagna">
+<g stroke="#2A323B" stroke-width="1">
+<line x1="0" y1="95" x2="600" y2="95"></line><line x1="0" y1="190" x2="600" y2="190"></line><line x1="0" y1="285" x2="600" y2="285"></line>
+<line x1="150" y1="0" x2="150" y2="380"></line><line x1="300" y1="0" x2="300" y2="380"></line><line x1="450" y1="0" x2="450" y2="380"></line>
+</g>
+<g fill="none" stroke="#C6FF3D" stroke-width="1.5" stroke-dasharray="5 6">
+<path d="M500 180 Q 380 60 250 150"></path><path d="M500 180 Q 330 120 120 220"></path><path d="M500 180 Q 360 250 220 250"></path><path d="M120 220 L 250 150 L 220 250 Z"></path>
+</g>
+<g font-family="JetBrains Mono, monospace" font-size="13" fill="#EDEFF2">
+<circle cx="500" cy="180" r="9" fill="#C6FF3D"></circle><circle cx="500" cy="180" r="22" fill="none" stroke="#C6FF3D" stroke-opacity="0.4"></circle><text x="480" y="220">ITALIA</text>
+<circle cx="250" cy="150" r="6" fill="#EDEFF2"></circle><text x="220" y="130">BARCELLONA</text>
+<circle cx="120" cy="220" r="6" fill="#EDEFF2"></circle><text x="80" y="250">MADRID</text>
+<circle cx="220" cy="250" r="6" fill="#EDEFF2"></circle><text x="190" y="280">VALENCIA</text>
+</g>
+</svg>
+</div>
+</section>
+
+<div class="wrap">
+<section id="metodo" class="sec px col" style="gap:64px">
+<div class="col reveal" style="gap:20px">
+<div class="tag">04 / metodo</div>
+<h2 class="h2">Pipeline di progetto</h2>
+</div>
+<div class="steps">
+<div class="reveal"><div class="n">01</div><h3>Analisi</h3><p>Audit di processi, dati e stack esistente. Individuazione di colli di bottiglia e priorità.</p></div>
+<div class="reveal"><div class="n">02</div><h3>Progettazione</h3><p>Architettura, data model, flussi di integrazione e specifiche funzionali approvate.</p></div>
+<div class="reveal"><div class="n">03</div><h3>Implementazione</h3><p>Sviluppo iterativo, integrazioni, test e rilascio controllato con formazione del team.</p></div>
+<div class="reveal"><div class="n">04</div><h3>Supporto</h3><p>Monitoraggio, manutenzione evolutiva e ottimizzazione continua sui KPI.</p></div>
+</div>
+</section>
+
+<section id="green" class="green">
+<div class="grid2" style="align-items:center">
+<div class="col reveal" style="gap:24px">
+<div class="tag">05 / efficienza_circolare</div>
+<h2 class="h2" style="font-size:clamp(30px,4vw,46px)">Niente va sprecato. Né i dati, né l'energia.</h2>
+<p style="font-size:18px;line-height:1.65;color:#B7BEC6">Il nostro lavoro parte da un principio: eliminare lo spreco. Nei processi aziendali significa recuperare ore, dati e informazioni disperse. E ciò che generiamo con il digitale lo reinvestiamo nelle energie rinnovabili, a partire dal pellet: una biomassa ricavata dai residui della lavorazione del legno.</p>
+</div>
+<svg class="fluid reveal" viewBox="0 0 520 360" role="img" aria-label="Ciclo dello scarto che diventa risorsa">
+<g fill="none" stroke-width="1.5">
+<ellipse cx="260" cy="180" rx="220" ry="140" stroke="#2F3D2B"></ellipse>
+<path d="M60 150 A 220 140 0 0 1 440 130" stroke="#C6FF3D" stroke-dasharray="6 7"></path>
+<path d="M455 215 A 220 140 0 0 1 70 225" stroke="#C6FF3D" stroke-dasharray="6 7"></path>
+<path d="M432 120 l12 8 l-14 5" stroke="#C6FF3D"></path><path d="M80 236 l-12 -8 l14 -5" stroke="#C6FF3D"></path>
+</g>
+<g font-family="JetBrains Mono, monospace" font-size="13" fill="#EDEFF2" text-anchor="middle">
+<rect x="10" y="160" width="140" height="44" rx="8" fill="#0A0C0F" stroke="#2F3D2B"></rect><text x="80" y="187">SCARTO</text>
+<rect x="370" y="160" width="140" height="44" rx="8" fill="#C6FF3D"></rect><text x="440" y="187" fill="#0A0C0F">RISORSA</text>
+<text x="260" y="30" fill="#9AA3AD">dati dispersi → sistemi integrati</text>
+<text x="260" y="345" fill="#9AA3AD">residui di legno → pellet</text>
+<text x="260" y="186" font-family="Unbounded, sans-serif" font-size="18" font-weight="600" fill="#C6FF3D">valore</text>
+</g>
+</svg>
+</div>
+<div class="grid2" style="gap:20px">
+<div class="gcard reveal"><div class="k tag" style="font-size:12px">NEL DIGITALE</div><h3>Processi senza sprechi</h3><p>Automazioni al posto del data-entry, flussi digitali al posto della carta, dati integrati al posto di file sparsi.</p></div>
+<div class="gcard reveal"><div class="k tag" style="font-size:12px">NELL'ENERGIA</div><h3>Reinvestiamo nel pellet</h3><p>I proventi dei nostri progetti digitali finanziano energia rinnovabile: il pellet dà valore ai residui del legno ed è un'alternativa ai combustibili fossili.</p></div>
+</div>
+<div class="claim reveal">Ogni progetto digitale che realizziamo alimenta un investimento nelle rinnovabili.</div>
+</section>
+
+<section class="px col" style="padding-bottom:140px;gap:48px">
+<div class="col reveal" style="gap:20px">
+<div class="tag">06 / garanzie</div>
+<h2 class="h2">Come lavoriamo</h2>
+</div>
+<div class="grid4">
+<div class="gar reveal"><h3>Preventivo e specifiche scritte</h3><p>Perimetro, tempi e costi definiti prima dell'avvio.</p></div>
+<div class="gar reveal"><h3>Referente dedicato</h3><p>Un unico interlocutore per tutta la durata del progetto.</p></div>
+<div class="gar reveal"><h3>Documentazione consegnata</h3><p>Architettura, flussi e procedure restano all'azienda.</p></div>
+<div class="gar reveal"><h3>Riservatezza</h3><p>Accordo di riservatezza disponibile su richiesta.</p></div>
+</div>
+</section>
+</div>
+
+<section id="contatti" class="contatti">
+<div class="px grid2 wrap">
+<div class="col reveal" style="gap:28px">
+<div class="tag">07 / contatti</div>
+<h2 class="h2">Parliamo del tuo stack.</h2>
+<p style="font-size:18px;line-height:1.6;color:#B7BEC6">Descrivi processi e strumenti attuali: ti rispondiamo con una prima valutazione tecnica.</p>
+<div class="clist">
+<div><span style="color:#8A939D">tel → </span><a href="tel:+393480483438">+39 348 048 3438</a></div>
+<div><span style="color:#8A939D">tel → </span><a href="tel:+393505319152">+39 350 531 9152</a></div>
+<div><span style="color:#8A939D">email → </span><a href="mailto:cmdigotal.1900@gmail.com">cmdigotal.1900@gmail.com</a></div>
+</div>
+</div>
+<form id="cform" class="reveal" novalidate>
+<div class="frow">
+<label>Nome e cognome<input name="nome" type="text" autocomplete="name" required></label>
+<label>Azienda<input name="azienda" type="text" autocomplete="organization" required></label>
+</div>
+<div class="frow">
+<label>Email aziendale<input name="email" type="email" autocomplete="email" required></label>
+<label>Dipendenti<select name="dipendenti"><option>10–49</option><option>50–249</option><option>250+</option></select></label>
+</div>
+<label>Area di interesse<select name="area"><option>Trasformazione digitale &amp; IA</option><option>Automazione dei processi</option><option>Lead generation</option><option>SEO tecnica</option><option>Siti web &amp; piattaforme</option><option>Consulenza &amp; PM</option></select></label>
+<label>Descrivi il progetto<textarea name="messaggio" rows="5"></textarea></label>
+<button type="submit" class="btn">Richiedi una consulenza</button>
+<div class="fmsg" id="fmsg" role="status"></div>
+<p class="fnote">Il pulsante apre il tuo programma di posta con la richiesta pronta per cmdigotal.1900@gmail.com. Inviando accetti l'<a href="#privacy">informativa privacy</a>.</p>
+</form>
+</div>
+</section>
+</main>
+
+<footer>
+<div class="px wrap">
+<div class="grid4">
+<div class="col" style="gap:14px">
+<div class="logo"><i style="width:18px;height:18px"></i><b style="font-size:15px">CM DIGITAL</b></div>
+<span style="line-height:1.6">Trasformazione digitale, IA, lead generation e SEO per aziende strutturate. Reinvestiamo nelle energie rinnovabili, a partire dal pellet.</span>
+</div>
+<div class="col"><b>Dati societari</b><span>CM Digital S.R.L.S.</span><span>Sede legale: Via Campo La Guzza 7/A, 03030 Broccostella (FR)</span><span>C.F. e P.IVA 03187650605</span></div>
+<div class="col"><b>Contatti</b><a href="tel:+393480483438">+39 348 048 3438</a><a href="tel:+393505319152">+39 350 531 9152</a><a href="mailto:cmdigotal.1900@gmail.com">cmdigotal.1900@gmail.com</a></div>
+<div class="col"><b>Legale</b><a href="#privacy">Privacy policy</a><a href="#privacy">Cookie policy</a></div>
+</div>
+<div class="legal" id="privacy" style="margin-top:48px">
+<h3>Informativa privacy (sintesi)</h3>
+<p>Titolare del trattamento: CM Digital S.R.L.S., Via Campo La Guzza 7/A, 03030 Broccostella (FR), P.IVA 03187650605, email cmdigotal.1900@gmail.com. I dati inviati tramite email o telefono sono usati solo per rispondere alla richiesta di contatto e non sono ceduti a terzi. Puoi chiederne in ogni momento accesso, rettifica o cancellazione scrivendo all'indirizzo indicato.</p>
+<h3>Cookie</h3>
+<p>Questo sito non usa cookie di profilazione né strumenti di tracciamento. Vengono caricati i caratteri tipografici da Google Fonts.</p>
+</div>
+<div class="copy">© 2026 CM Digital S.R.L.S. · Tutti i diritti riservati</div>
+</div>
+</footer>
+
+<script>
+(function(){
+  var els=document.querySelectorAll('.reveal');
+  if('IntersectionObserver' in window){
+    var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target);}});},{threshold:.12,rootMargin:'0px 0px -40px 0px'});
+    els.forEach(function(el){io.observe(el);});
+  } else { els.forEach(function(el){el.classList.add('in');}); }
+
+  var f=document.getElementById('cform'), msg=document.getElementById('fmsg');
+  f.addEventListener('submit',function(ev){
+    ev.preventDefault();
+    var d=new FormData(f);
+    if(!d.get('nome')||!d.get('azienda')||!d.get('email')||!/^\S+@\S+\.\S+$/.test(d.get('email'))){
+      msg.textContent='Compila nome, azienda e un indirizzo email valido.';return;
+    }
+    var body='Nome e cognome: '+d.get('nome')+'\nAzienda: '+d.get('azienda')+'\nEmail: '+d.get('email')+'\nDipendenti: '+d.get('dipendenti')+'\nArea di interesse: '+d.get('area')+'\n\nProgetto:\n'+(d.get('messaggio')||'');
+    var subj='Richiesta consulenza – '+d.get('azienda');
+    window.location.href='mailto:cmdigotal.1900@gmail.com?subject='+encodeURIComponent(subj)+'&body='+encodeURIComponent(body);
+    msg.textContent='Si sta aprendo il tuo programma di posta: premi Invia per completare la richiesta.';
+  });
+})();
+</script>
+</body>
+</html>
